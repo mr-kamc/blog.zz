@@ -37,4 +37,7 @@ Route::group(['prefix'=>'admin'], function()
     {
         return view('admin.dashboard');
     });
+    Route::resource('Articles','ArticlesController');
+    Route::resource('Pages','PagesController');
+    Route::resource('Categories','CategoriesController');
 });
