@@ -59,4 +59,5 @@ class Article extends Model
             unlink($root . $article->preview); //удаляем превьюшку
         }
     }
+
 }

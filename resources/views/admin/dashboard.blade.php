@@ -6,7 +6,7 @@
 </ul>
 <h2>Категории</h2>
 <ul>
-    <li><a href="/admin/articles">Все категории</a></li>
+    <li><a href="/admin/categories">Все категории</a></li>
     <li><a href="/admin/categories/create">Добавить категорию</a></li>
 </ul>
 <h2>Комментарии</h2>

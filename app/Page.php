@@ -6,5 +6,13 @@ use Illuminate\Database\Eloquent\Model;
 
 class Page extends Model
 {
-    //
+    protected $table = 'pages';
+    protected $fillable = ['title'];
+
+    public function index()
+    {
+        $articles = Article::all();
+        return view('index', ['articles' => $articles]);
+    }
+
 }

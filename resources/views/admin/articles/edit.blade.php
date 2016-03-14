@@ -3,6 +3,7 @@
     <form method="POST" action="{{action('ArticlesController@update',['articles'=>$article->id])}}" enctype="multipart/form-data">
         <input type="hidden" name="_method" value="put">
         Превью:<br>
+
         @if(!empty($article->preview))
             <img src="{{$article->preview}}">
         @endif
