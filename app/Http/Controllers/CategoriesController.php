@@ -11,8 +11,8 @@ class CategoriesController extends Controller
 {
     public function index()
     {
-        $categories=Category::all();
-        return view('admin.categories.categories',['categories'=>$categories]);
+        $categories = Category::all();
+        return view('admin.categories.categories', ['categories' => $categories]);
     }
 
     public function create()
@@ -33,18 +33,18 @@ class CategoriesController extends Controller
         return back()->with('message', 'Категория ' . $category->title . ' удалена');
     }
 
-        public function edit($id)
+    public function edit($id)
     {
-        $category=Category::find($id);
-        return view('admin.categories.edit',['category'=>$category]);
+        $category = Category::find($id);
+        return view('admin.categories.edit', ['category' => $category]);
     }
 
-    public function update(Request $request,$id)
+    public function update(Request $request, $id)
     {
-        $category=Category::find($id);
+        $category = Category::find($id);
         $category->update($request->all());
         $category->save();
-        return back()->with('message','Категория обновлена');
+        return back()->with('message', 'Категория обновлена');
     }
 
 }
