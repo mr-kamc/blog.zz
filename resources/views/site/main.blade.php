@@ -3,7 +3,7 @@
 <head>
     <meta http-equiv="content-type" content="text/html; charset=utf-8" />
     <title>Blog</title>
-    <link href="{{asset('css/style.css')}}" rel="stylesheet" type="text/css" media="screen" />
+    <link href="{{asset('css/site.css')}}" rel="stylesheet" type="text/css" media="screen" />
 </head>
 <body>
 <div id="header-wrapper">
