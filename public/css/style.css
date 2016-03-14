@@ -1,14 +1,7 @@
-
-/*
-Design by Free CSS Templates
-http://www.freecsstemplates.org
-Released for free under a Creative Commons Attribution 2.5 License
-*/
-
 body {
 	margin: 0px;
 	padding: 0;
-	background: #000000 url(images/img04.jpg) repeat-x left top;
+	background: #000000 repeat-x left top;
 	font-family: Arial, Helvetica, sans-serif;
 	font-size: 12px;
 	color: #464646;
@@ -101,7 +94,7 @@ hr { display: none; }
 	padding: 0px;
 	list-style: none;
 	line-height: normal;
-	background: url(images/img02.jpg) no-repeat right top;
+	background:no-repeat right top;
 }
 
 #menu li {
@@ -129,16 +122,16 @@ hr { display: none; }
 }
 
 #menu .current_page_item a {
-	background: #000000 url(images/img01.jpg) no-repeat right top;
+	background: #000000 no-repeat right top;
 	padding-right: 40px;
 }
 
 #menu .last {
-	background: #A5A5A5 url(images/img02.jpg) no-repeat right top;
+	background: #A5A5A5 no-repeat right top;
 }
 
 #menu .current-last {
-	background: #000000 url(images/img05.jpg) no-repeat right top;
+	background: #000000 no-repeat right top;
 }
 
 /* Search */
@@ -185,7 +178,7 @@ hr { display: none; }
 	width: 900px;
 	margin: 0px auto;
 	padding: 40px 0px 0px 0px;
-	background: #FFFFFF url(images/img06.jpg) repeat-y left 20px;
+	background: #FFFFFF repeat-y left 20px;
 }
 
 /** LOGO */
@@ -258,7 +251,7 @@ hr { display: none; }
 }
 
 .post .meta {
-	background: #000000 url(images/img03.jpg) no-repeat right top;
+	background: #000000 no-repeat right top;
 	height: 28px;
 	padding: 2px 30px 0px 30px;
 	text-transform: lowercase;
@@ -327,7 +320,7 @@ hr { display: none; }
 	margin: 0px 0px 0px 0;
 	padding: 10px 0px 10px 15px;
 	border-bottom: 1px solid #E0E0E0;
-	background: url(images/img04.gif) no-repeat left 15px;
+	background: no-repeat left 15px;
 }
 
 #sidebar li li a {
