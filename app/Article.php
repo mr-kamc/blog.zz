@@ -3,6 +3,7 @@
 namespace App;
 
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Http\Request;
 
 class Article extends Model
 {
@@ -10,7 +11,7 @@ class Article extends Model
     protected $fillable = ['title', 'content', 'preview', 'meta_description',
         'meta_keywords', 'category_id', 'comments_enable', 'public'];
 
-    public function createPrev($request)
+    public static function createPrev($request)
     {
 
         if ($request->hasFile('preview')) //определение, загружался ли файл в запросе
@@ -30,8 +31,9 @@ class Article extends Model
         }
     }
 
-    public function updatePrev($request)
+    public static function updatePrev(Request $request, $id)
     {
+        $article = Article::find($id);
         if ($request->hasFile('preview')) //Проверяем была ли передана картинка, ведь статья может быть и без картинки.
         {
             $date = date('d.m.Y'); //определение текущей даты
@@ -43,9 +45,9 @@ class Article extends Model
             $request->file('preview')->move($root . $date, $fileName); //перемещаем файл в папку
             $all = $request->all(); //в переменой $all будет массив, который содержит все введенные данные в форме
             $all['preview'] = "/images/" . $date . "/" . $fileName;// меняем значение preview на нашу ссылку
-            Article::update($all);
+            $article->update($all);
         } else {
-            Article::update($request->all());
+            $article->update($request->all());
         }
     }
 

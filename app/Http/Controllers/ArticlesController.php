@@ -30,15 +30,13 @@ class ArticlesController extends Controller
 
     public function store(Request $request)
     {
-        $article = new Article();
-        $article->createPrev($request);
+        Article::createPrev($request);
         return back()->with('message', 'Статья добавлена');
     }
 
     public function update(Request $request, $id)
     {
-        $article = Article::find($id);
-        $article->updatePrev($request);
+        Article::updatePrev($request, $id);
         return back()->with('message', 'Статья изменена');
     }
 
