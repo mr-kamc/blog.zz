@@ -24,7 +24,7 @@ class ArticlesController extends Controller
     public function edit($id)
     {
         $article=Article::find($id); //выбираем статью для редактирования
-        $categories=Category::all(); // выбираем все категории
+        $categories=Article::all(); // выбираем все категории
         return view('admin.articles.edit',['article'=>$article,'categories'=>$categories]);
     }
 
