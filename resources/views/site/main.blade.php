@@ -10,8 +10,9 @@
     <div id="header">
         <div id="menu">
             <ul>
-                <li class="current_page_item"><a href="#">Home</a></li>
+                <li class="current_page_item"><a href="/">Home</a></li>
                 <li><a href="#">Blog</a></li>
+                <li><a href="/admin">Admin</a></li>
                 <li><a href="#">About</a></li>
                 <li><a href="#" class="last">Contact</a></li>
             </ul>
@@ -23,8 +24,8 @@
 <!-- end #header -->
 <!-- end #header-wrapper -->
 <div id="logo">
-    <h1><a href="#">Predilection </a></h1>
-    <p><em> template design by <a href="http://www.freecsstemplates.org/">Free CSS Templates</a></em></p>
+    <h1><a href="#">Blog </a></h1>
+    <p><em>blog blog blog</em></p>
 </div>
 <hr />
 <!-- end #logo -->
