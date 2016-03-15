@@ -6,9 +6,17 @@
         <div>
             <img src="{{$article->preview}}">{{str_limit($article->content, 150)}}
 
+            @foreach($categories as $category)
+                <?php
+                $categoryId = \App\Category::where('id', '=', $article->category_id)->find($article->category_id);
+                ?>
+            @endforeach
+            <div>
+                {{$categoryId->title}}
+            </div>
         </div>
-    @endforeach
-@endsection
+        @endforeach
+        @endsection
 
-</body>
-</html>
+        </body>
+        </html>
